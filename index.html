@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="https://kit.fontawesome.com/8e7c30ddfb.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/8e7c30ddfb.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lato:wght@300;400&family=Poppins:wght@300;600&family=Roboto:wght@400;500;700&family=Vina+Sans&display=swap"
       rel="stylesheet"
@@ -20,8 +23,8 @@
     <title>Front-end Dev | Luciano Sardanha</title>
   </head>
   <body>
-    <header class="header-container">
-      <a href="./index.html" class="logo-container">
+    <header id="home" class="header-container" onclick="scrollToTop()">
+      <a class="logo-container">
         <div class="left-logo-line"></div>
         <div class="bottom-logo-line"></div>
         <div class="right-logo-line"></div>
@@ -30,97 +33,99 @@
         <div class="top--right-logo-line"></div>
       </a>
       <nav class="link-container">
-        <a href="#" class="nav-link">
-          <i class="fa-regular fa-address-card"></i>
-          <span class="link-text">About</span></a>
-        <a href="#" class="nav-link">
-          <i class="fa-solid fa-fill-drip"></i>
-          <span class="link-text">Projects</span></a>
-        <a href="#" class="nav-link">
-          <i class="fa-solid fa-toolbox"></i>
-          <span class="link-text">Skills</span></a>
-        <a href="#" class="nav-link">
-          <i class="fa-regular fa-envelope"></i>
-          <span class="link-text">Contact</span></a>
+        <a href="#about" class="nav-link">
+          <i class="fa-regular fa-address-card link-icons-a"></i>
+          <span class="link-text">About</span></a
+        >
+        <a href="#projects" class="nav-link">
+          <i class="fa-solid fa-fill-drip link-icons-a"></i>
+          <span class="link-text">Portfolio</span></a
+        >
+
+        <a href="#contact" class="nav-link">
+          <i class="fa-regular fa-envelope link-icons-a"></i>
+          <span class="link-text">Contact</span></a
+        >
       </nav>
     </header>
 
-
-
-
-
     <main>
-      <section class="section-one-name thumb">
-        <h1 class="header-h1-name anim">Luciano</h1>
+      <section class="section-one-name">
+        <h1 class="header-h1-name">Luciano</h1>
 
-        <h1 class="header-h1-surname anim">Sardanha</h1>
+        <h1 class="header-h1-surname">Sardanha</h1>
 
-        <h2 class="header-h2-1  anim">front-end</h2>
-        <h2 class="header-h2-2  anim">developer</h2>
-
+        <h2 class="header-h2-1">front-end</h2>
+        <h2 class="header-h2-2">developer</h2>
       </section>
-      <div class="content">
 
+      <section id="about" class="section-about">
+        <h3>About</h3>
+        <div class="container-my-skills">
+          <div>
+            <img class="image-about" src="#" alt="logo image paragraph 1">
+            <h4>h4 </h4>
+            <p>para1</p>
+          </div>
+          <div>
+            <img class="image-about" src="#" alt="logo image paragraph 2">
+            <h4>h4 </h4>
+            <p>para2</p>
+          </div>
+          <div>
+            <img class="image-about" src="#" alt="logo image paragraph 3">
+            <h4>h4 </h4>
+            <p>para3</p>
+          </div>
+          <div>
+            <img class="image-about" src="#" alt="logo image paragraph 4">
+            <h4>h4 </h4>
+            <p>para4</p>
+            <div>
+              <img class="image-about" src="#" alt="logo image paragraph 5">
+              <h4>h4 </h4>
+              <p>para5</p>
+            </div>
+          </div>
+        </div>
+        <div class="container-photo-skills">
+          <div class="container-my-photo">
+            <div class="div-image-my-photo">
+              <img class="image-my-photo" src="./images/my_photo.jpg" alt="my photo"/>
+            </div>
+            <h4 class="whoamI">Who am I?</h4>
+            <p class="para-about-me">
+              Passionate front-end developer skilled in creating engaging web experiences. Expert in JavaScript and ReactJS for dynamic interfaces.
+              <br/> Committed to delivering high-quality, visually appealing websites.
+            </p>
+          </div>
+          <div class="container-tecnologies">
+          <h4>Some tecnologies I am familiar with</h4>
+          <div class="tec-container">
+            <div>Css</div>
+            <div>JavaScript</div>
+            <div>ReactJS</div>
+            <div>NodeJS</div>
+            <div>Linux</div>
+            <div>MongoDB</div>
+            <div>Express & Mongoose</div>
+            <div>Redux</div>
+            <div>Firebase</div>
 
+          </div>
+          </div>
+        </div>
+      </section>
 
-
-
-
-
-
-
-        
-
-        <section class="section-about">
-
-
-
-
-      
-          <h3>About Me</h3>
-          <p>
-            I am a passionate front-end developer with expertise in creating
-            engaging and user-friendly web experiences. I have a strong
-            understanding of HTML, CSS, and JavaScript, and I enjoy bringing
-            designs to life through code. With a keen eye for detail and a
-            commitment to delivering high-quality work, I always try to create
-            intuitive and visually appealing websites.
-          </p>
-        </section>
-        <section>
-          <hr />
-
-          <h3>Skills</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Web Design</li>
-            <li>UI/UX Design</li>
-            <li>Version Control (Git)</li>
-            <li>Reactjs</li>
-            <li>Jest</li>
-          </ul>
-
-          <hr />
-
-          <ul>
-            Other tecnologies:
-            <li>Linux</li>
-          </ul>
-        </section>
-      </div>
-      <hr />
-
-      <aside>
+      <section id="projects" class="section-projects">
         <h3>Projects</h3>
-        <ul>
-          <li><a href="https://www.example.com">link-one</a></li>
-          <li><a href="https://www.example.com">link-two</a></li>
-          <li><a href="https://www.example.com">link-three</a></li>
-        </ul>
-      </aside>
+      </section>
+
+      <section id="contact" class="section-contact">
+        <h3>Contact</h3>
+      </section>
     </main>
+
     <footer>
       &#169; LS-WEB Development
       <a
@@ -128,7 +133,17 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="devicon-github-original"></i>
+        <i class="devicon-github-original icon-bottom"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/luciano-sardanha-0bb47054/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="image-linkedin"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+        />
       </a>
     </footer>
   </body>

@@ -19,7 +19,10 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: white;
+  background-color: var(--normal-background-color);
+  font-family: "Inter", sans-serif;
+  color: var(--main-light-color);
+  font-family: "Roboto", sans-serif;
 }
 
 /* header */
@@ -202,29 +205,24 @@ body {
 
 /* end logo */
 
-/*QuickReset*/*{margin:0;box-sizing:border-box;}
-
-
-.anim {
-  transition: 0.5s;
-  transform: translateY(100%);
+/*QuickReset*/
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-/* ANIMATE */
-
-.thumb:hover .anim {
-  transform: translateY(15px);
-}
-
-
-
+/* Update the .header-container class */
 .header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
   height: 50px;
+  width: 100%; /* Added to span the entire width */
   background-color: var(--second-text-color);
+  box-shadow: 4px 2px 10px 1px #13464e;
 }
 
 .link-container {
@@ -275,7 +273,112 @@ body {
 
 /* about */
 .section-about {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: var(--light-background-color);
+  padding: 55px 8px 0 8px;
   height: 100vh;
+
+  color: #000000;
+  box-shadow: 4px 2px 10px 1px #32646b;
+}
+.section-about > * {
+  background-color: #84dcbc;
+
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.container-photo-skills {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  background-color: var(--light-background-color);
+}
+.container-photo-skills > * {
+  background-color: #84dcbc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.container-my-skills {
+  display: flex;
+  ;
+}
+.container-my-photo {
+  width: 50%;
+  ;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center the items */
+  justify-content: center; /* Vertically center the items */
+  /* Add any additional styles you want for the container */
+}
+.div-image-my-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 65px;
+}
+.image-my-photo {
+  
+  border-radius: 50%;
+  width: 250px;
+}
+.whoamI {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.para-about-me {
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+}
+.container-tecnologies {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.tec-container {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  }
+.tec-container div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.2rem;
+  height: 50px;
+  border-bottom: 1px #32646b solid;
+  color:#000000;
+  background-color: #6fc7d3;
+  border-right: #3fc591 300px solid;
+}
+
+
+
+
+
+.section-projects {
+  padding: 55px 8px 0 8px;
+
+  height: 100vh;
+  box-shadow: 4px 2px 10px 1px #32646b;
+}
+
+.section-contact {
+  padding: 55px 8px 0 8px;
+
+  height: 100vh;
+  box-shadow: 4px 2px 10px 1px #32646b;
 }
 
 /* footer */
@@ -292,67 +395,70 @@ footer {
   text-decoration: none;
   color: var(--main-light-color);
 }
-.devicon-github-original {
+
+.icon-bottom {
   color: var(--main-light-color);
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 1.3rem;
 }
-
-.fa-address-card, .fa-fill-drip, .fa-toolbox, .fa-envelope{
+.image-linkedin {
+  margin-top: 5px;
+  width: 22px;
+}
+.link-icons-a {
   display: none;
- 
 }
 /* END SINGLE CATEGORY PAGE */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .header-h1-name {
     padding-top: 4%;
-        margin-left: 25%;
-        margin-bottom: -5%;;
+    margin-left: 35%;
+    margin-bottom: -5%;
   }
   .header-h1-surname {
     padding-top: 4%;
-        margin-left: 35%;
-        margin-bottom: -5%;;
+    margin-left: 45%;
+    margin-bottom: -15%;
   }
   .header-h2-1 {
-    padding-top: 14%;
-        margin-left: 15%;
-        margin-bottom: 0%;;
-  }
-  
-  .header-h2-2 {
     padding-top: 4%;
-        margin-left: 25%;
+    margin-left: 35%;
   }
 
+  .header-h2-2 {
+    padding-top: 4%;
+    margin-left: 45%;
+  }
 }
+
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
- 
   .header-h1-name {
     padding-top: 4%;
-        margin-left: 25%;
+    margin-left: 25%;
   }
   .header-h1-surname {
     padding-top: 4%;
-        margin-left: 35%;
+    margin-left: 35%;
   }
   .header-h2-1 {
     padding-top: 4%;
-        margin-left: 25%;
-  }
-  
-  .header-h2-2 {
-    padding-top: 4%;
-        margin-left: 35%;
+    margin-left: 25%;
   }
 
+  .header-h2-2 {
+    padding-top: 4%;
+    margin-left: 35%;
+  }
+  .tec-container div {
+    border-right: #3fc591 250px solid;
+  }
+  
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
- 
   .header-h1-name {
     padding-top: 4%;
     margin-left: 25%;
@@ -365,46 +471,57 @@ footer {
     padding-top: 4%;
     margin-left: 25%;
   }
-  
+
   .header-h2-2 {
     padding-top: 4%;
     margin-left: 35%;
   }
-
+  .tec-container div {
+    border-right: #3fc591 150px solid;
+  }
+  
 }
+
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-}
-.header-h1-name {
-  padding-top: 4%;
-  font-size: 4rem;
- 
+  .header-h1-name {
+    padding-top: 4%;
+    font-size: 4rem;
+  }
+  .header-h1-surname {
+    padding-top: 4%;
+    font-size: 4rem;
+  }
+  .header-h2-1 {
+    padding-top: 4%;
+  }
 
+  .header-h2-2 {
+    padding-top: 4%;
+  }
+  .tec-container div {
+    border-right: #3fc591 250px solid;
+  }
+  .container-photo-skills {
+    display: block;
+  }
+  .container-my-photo {
+    width: 100%;
+  }
+  .container-tecnologies {
+    width: 100%;
+  }
 }
-.header-h1-surname {
-  padding-top: 4%;
-  font-size: 4rem;
- 
 
-}
-.header-h2-1 {
-  padding-top: 4%;
-}
-
-.header-h2-2 {
-  padding-top: 4%;
-}
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   .header-h1-name {
     font-size: 3rem;
     padding-top: 14%;
-   
   }
   .header-h1-surname {
     font-size: 3rem;
     padding-top: 4%;
-    
   }
   .header-h2-1 {
     font-size: 2.2rem;
@@ -415,14 +532,30 @@ footer {
     font-size: 2.2rem;
     padding-top: 4%;
   }
-  .link-container a{
+  .link-container a {
     font-size: 1rem;
   }
- .fa-address-card, .fa-fill-drip, .fa-toolbox, .fa-envelope{
+  .link-icons-a {
     display: block;
     font-size: larger;
   }
   .link-text {
     display: none;
+  }
+  .container-photo-skills {
+    display: block;
+  }
+  .tec-container div {
+    border-right: #3fc591 100px solid;
+  }
+ 
+  .container-my-photo {
+    width: 100%;
+  }
+  .container-tecnologies {
+    width: 100%;
+  }
+  .section-about{
+    height: auto;
   }
 }
