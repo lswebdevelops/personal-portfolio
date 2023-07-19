@@ -7,28 +7,40 @@
   --main-dark-color: rgb(109, 108, 109);
   --main-border: solid 3px blue;
   --main-dark-background: #333;
+  --main-dark-color: #333;
   --second-dark-background: #666;
   --main-light-background: rgb(215, 215, 215);
+  --main-text-color: #3fc591;
+  --second-text-color: #13464e;
+  --light-background-color: rgb(214,234,228);
 }
 /*  testing */
 body {
   margin: 0;
-  margin-top: 4px;
   height: 100vh;
+  background-color: white;
 }
 
 /* header */
-
+.nav-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--main-light-color);
+}
+.nav-link:active {
+  text-decoration: underline;
+}
 /* logo */
 /* change the just .logo-container size and the rest will adjust */
 .logo-container {
+  margin-top: 4px;
   width: 40px;
   height: 40px;
   position: relative;
 }
 
 .left-logo-line {
-  background-color: var(--second-dark-background);
+  background-color: var(--main-text-color);
   position: absolute;
   border-top-left-radius: 2px;
   width: 5px;
@@ -43,7 +55,7 @@ body {
 @keyframes change-size {
   from {
     width: 1px;
-    background-color: #333;
+    background-color: var(--second-text-color);
   }
   to {
     width: 5px;
@@ -51,7 +63,8 @@ body {
 }
 
 .bottom-logo-line {
-  background-color: var(--second-dark-background);
+  background-color: var(--main-text-color);
+
   position: absolute;
   width: 100%; /* Set width to 100% to match the container's width */
   height: 5px;
@@ -66,16 +79,17 @@ body {
 @keyframes change-size1 {
   from {
     height: 1px;
-    background-color: #333;
+    background-color: var(--second-text-color);
   }
 
   to {
     height: 5px;
-    background-color: #666;
   }
 }
 .right-logo-line {
-  background-color: var(--second-dark-background);
+  /* background-color: var(--second-dark-background);
+   */
+  background-color: var(--main-text-color);
   position: absolute;
   width: 5px;
   height: calc(
@@ -91,16 +105,18 @@ body {
 @keyframes change-size2 {
   from {
     width: 1px;
-    background-color: #333;
+    /* background-color: #333;
+     */
+    background-color: var(--second-text-color);
   }
   to {
     width: 5px;
-    background-color: #666;
   }
 }
 
 .right-middle-logo-line {
-  background-color: var(--second-dark-background);
+  /* background-color: var(--second-dark-background); */
+  background-color: var(--main-text-color);
   position: absolute;
   width: calc(
     60%
@@ -118,16 +134,17 @@ body {
 @keyframes change-size3 {
   from {
     height: 1px;
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: var(--second-text-color);
   }
   to {
     height: 5px;
-    background-color: #666;
   }
 }
 
 .left-middle-logo-line {
-  background-color: var(--second-dark-background);
+  /* background-color: var(--second-dark-background); */
+  background-color: var(--main-text-color);
   position: absolute;
   width: 5px;
   height: calc(
@@ -145,21 +162,26 @@ body {
 @keyframes change-size4 {
   from {
     width: 1px;
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: var(--second-text-color);
   }
   to {
     width: 5px;
-    background-color: #666;
   }
 }
 
 .top--right-logo-line {
-  background-color: var(--second-dark-background);
+  /* background-color: var(--second-dark-background); */
+  background-color: var(--main-text-color);
   position: absolute;
   border-top-right-radius: 2px;
-  width: calc(60% ); /* Use calc() to adjust the width based on the container's width */
+  width: calc(
+    60%
+  ); /* Use calc() to adjust the width based on the container's width */
   height: 5px;
-  left: calc(40% ); /* Align the line with 35px from the left side of the container */
+  left: calc(
+    40%
+  ); /* Align the line with 35px from the left side of the container */
   top: 1px; /* Align the line with the top of the container */
   animation-duration: 3s;
   animation-name: change-size5;
@@ -169,11 +191,11 @@ body {
 @keyframes change-size5 {
   from {
     height: 1px;
-    background-color: #333;
+    /* background-color: #333; */
+    background-color: var(--second-text-color);
   }
   to {
     height: 5px;
-    background-color: #666;
   }
 }
 
@@ -183,6 +205,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
+  height: 50px;
+  background-color: var(--second-text-color);
 }
 
 .link-container {
@@ -193,8 +217,44 @@ body {
 }
 
 /* main */
+.section-one-name {
+  height: 100vh;
+  background-color: var(--light-background-color);
+}
 
-/* aside */
+.header-h1 {
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin-left: 25%;
+  padding-top: 14%;
+  padding-bottom: 15%;
+  ;
+}
+.header-h2 {
+  font-size: 2.2rem;
+ 
+
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15%;
+}
+
+
+
+/* about */
+.section-about {
+  height: 100vh;
+
+}
+
+
+
+
+
+
+
+
 
 /* footer */
 
@@ -208,7 +268,7 @@ footer {
   font-size: large;
   width: 100%;
   text-decoration: none;
-  color: var(--main-dark-color);
+  color: var(--main-light-color);
 }
 .devicon-github-original {
   color: var(--main-light-color);
