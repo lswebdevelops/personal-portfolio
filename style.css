@@ -13,6 +13,7 @@
 
 body {
   margin: 0;
+  margin-top: 4px;
   height: 100vh;
 }
 
@@ -23,13 +24,13 @@ body {
 .logo-container {
   width: 40px;
   height: 40px;
-  /* border: firebrick solid 1px;; */
-  position: relative; 
+  position: relative;
 }
 
 .left-logo-line {
   background-color: var(--second-dark-background);
   position: absolute;
+  border-top-left-radius: 2px;
   width: 5px;
   height: 100%; /* Set height to 100% to match the container's height */
   left: 0; /* Align the line with the left side of the container */
@@ -37,7 +38,7 @@ body {
   animation-duration: 3s;
   animation-name: change-size;
   animation-iteration-count: 1;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 @keyframes change-size {
   from {
@@ -48,7 +49,6 @@ body {
     width: 5px;
   }
 }
-
 
 .bottom-logo-line {
   background-color: var(--second-dark-background);
@@ -61,16 +61,14 @@ body {
   animation-name: change-size1;
   animation-iteration-count: 1;
   animation-direction: alternate;
-  
 }
 
 @keyframes change-size1 {
   from {
     height: 1px;
     background-color: #333;
-
   }
-  
+
   to {
     height: 5px;
     background-color: #666;
@@ -80,19 +78,20 @@ body {
   background-color: var(--second-dark-background);
   position: absolute;
   width: 5px;
-  height: calc(50% - 1px); /* Use calc() to adjust the height based on the container's height */
+  height: calc(
+    50% - 1px
+  ); /* Use calc() to adjust the height based on the container's height */
   right: 0; /* Align the line with the right side of the container */
   top: calc(50%); /* Align the line with the top of the container */
   animation-duration: 3s;
   animation-name: change-size2;
   animation-iteration-count: 1;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 @keyframes change-size2 {
   from {
     width: 1px;
     background-color: #333;
-
   }
   to {
     width: 5px;
@@ -100,24 +99,26 @@ body {
   }
 }
 
-
 .right-middle-logo-line {
   background-color: var(--second-dark-background);
   position: absolute;
-  width: calc(50%); /* Use calc() to adjust the width based on the container's width */
+  width: calc(
+    60%
+  ); /* Use calc() to adjust the width based on the container's width */
   height: 5px;
-  left: calc(50%); /* Align the line with 35px from the left side of the container */
+  left: calc(
+    40%
+  ); /* Align the line with 35px from the left side of the container */
   top: calc(50%); /* Align the line with 25px from the top of the container */
   animation-duration: 3s;
   animation-name: change-size3;
   animation-iteration-count: 1;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 @keyframes change-size3 {
   from {
     height: 1px;
     background-color: #333;
-
   }
   to {
     height: 5px;
@@ -125,24 +126,26 @@ body {
   }
 }
 
-
 .left-middle-logo-line {
   background-color: var(--second-dark-background);
   position: absolute;
   width: 5px;
-  height: calc(50%); /* Use calc() to adjust the height based on the container's height */
-  left: calc(50%); /* Align the line with 35px from the left side of the container */
+  height: calc(
+    50%
+  ); /* Use calc() to adjust the height based on the container's height */
+  left: calc(
+    40%
+  ); /* Align the line with 35px from the left side of the container */
   top: 1px; /* Align the line with the top of the container */
   animation-duration: 3s;
   animation-name: change-size4;
   animation-iteration-count: 1;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 @keyframes change-size4 {
   from {
     width: 1px;
     background-color: #333;
-
   }
   to {
     width: 5px;
@@ -150,24 +153,23 @@ body {
   }
 }
 
-
 .top--right-logo-line {
   background-color: var(--second-dark-background);
   position: absolute;
-  width: calc(50%); /* Use calc() to adjust the width based on the container's width */
+  border-top-right-radius: 2px;
+  width: calc(60% ); /* Use calc() to adjust the width based on the container's width */
   height: 5px;
-  left: calc(50%); /* Align the line with 35px from the left side of the container */
+  left: calc(40% ); /* Align the line with 35px from the left side of the container */
   top: 1px; /* Align the line with the top of the container */
   animation-duration: 3s;
   animation-name: change-size5;
   animation-iteration-count: 1;
-  animation-direction:alternate;
+  animation-direction: alternate;
 }
 @keyframes change-size5 {
   from {
     height: 1px;
     background-color: #333;
-
   }
   to {
     height: 5px;
@@ -175,9 +177,7 @@ body {
   }
 }
 
-
 /* end logo */
-
 
 .header-container {
   display: flex;
@@ -215,4 +215,3 @@ footer {
   text-decoration: none;
   font-size: 1.3rem;
 }
-
