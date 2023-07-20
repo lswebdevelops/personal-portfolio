@@ -3,7 +3,9 @@
   margin: 0;
 }
 :root {
-  --main-dark-color: #444;
+  --main-dark-color: #000000;
+  --second-text-color: rgb(214, 234, 228);
+  --main-light-color: #333;
   --main-logo-color: rgb(42, 119, 170);
   --main-dark-background: rgb(195, 196, 197);
   --normal-background-color: rgb(214, 234, 228);
@@ -15,7 +17,7 @@ body {
   height: 100vh;
   background-color: var(--normal-background-color);
   font-family: "Inter", sans-serif;
-  color: var(--main-light-color);
+
   font-family: "Roboto", sans-serif;
 }
 main {
@@ -383,7 +385,7 @@ main {
 /* footer */
 
 footer {
-  background-color: var(--main-dark-background);
+  background-color: var(--normal-background-color);
   padding: 10px;
   text-align: center;
   position: fixed;
