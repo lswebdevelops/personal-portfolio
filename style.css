@@ -389,7 +389,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  font-size: large;
+  font-size: 1.4rem;
   width: 100%;
   text-decoration: none;
   color: var(--main-light-color);
@@ -398,7 +398,7 @@ footer {
 .icon-bottom {
   color: var(--main-light-color);
   text-decoration: none !important;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .image-linkedin {
   margin-top: 5px;
@@ -850,17 +850,17 @@ footer {
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
   .header-h2-1 {
-    font-size: 2.2rem;
-    padding: 80px 4px 4px 4px;
+    font-size: 2.6rem;
+    padding: 80px 4px 4px 25px;
   }
 
   .header-h2-2 {
-    font-size: 2.2rem;
-    padding: 30px 4px 4px 4px;
+    font-size: 2.6rem;
+    padding: 30px 4px 4px 25px;
   }
   .header-h1-name {
-    font-size: 1.2rem;
-    padding: 80px 4px 4px 4px;
+    font-size: 1.6rem;
+    padding: 80px 4px 4px 25px;
   }
 
   .section-one-logo {
@@ -872,11 +872,11 @@ footer {
 
 
   .link-container a {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .link-icons-a {
     display: block;
-    font-size: larger;
+    font-size: 1.6rem;
   }
   .link-text {
     display: none;
@@ -901,7 +901,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     color: var(--main-logo-color);
     width: 50px;
     height: 50px;
@@ -929,14 +929,14 @@ footer {
   
 
   .container-tecnologies h4 {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .container-my-skills {
     display: flex;
     gap: 12px;
   }
   .container-my-skills h4 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     height: 30px;
   }
 
