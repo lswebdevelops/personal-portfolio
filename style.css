@@ -22,6 +22,7 @@ body {
 main {
   max-width: 1200px;
   margin: auto;
+  
 }
 
 /* header */
@@ -234,7 +235,9 @@ main {
 
 .section-one-name {
   margin-top: 25px;
+
 }
+
 
 /* starting  hover name */
 .reveal-container {
@@ -256,7 +259,7 @@ main {
 }
 
 .div-reveal {
-  width: 95%;
+  width: 100%;
   height: 100vh;
   transform: scale(0.9);
   position: relative;
@@ -337,6 +340,16 @@ main {
 .text-small-devices {
   display: none;
 }
+
+
+
+.section-one-div-container ,.div-reveal , .reveal,.reveal-container ,.reveal_title,.image-home{
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  ;
+}
+
 /* about */
 .section-about {
   display: flex;
