@@ -400,11 +400,9 @@ main {
   /* width: 250px; */
   transition: transform ease 0.3s;
 }
-.image-my-photo:hover{
-transform: scale(1.2);
+.image-my-photo:hover {
+  transform: scale(1.2);
 }
-
-
 
 .whoamI {
   text-align: center;
@@ -432,12 +430,28 @@ transform: scale(1.2);
 .tec-container {
   display: flex;
   flex-direction: column;
+
   gap: 15px;
 }
+.tec-icons {
+  position: absolute;
+  right: 15%;
+  width: 5%;
+  color: var(--main-logo-color);
+}
+.tec-icons:hover {
+  transform: scale(1.3);
+}
+.tec-icons-firebase {
+  height: 25px;
+  margin-right: 35px;
+}
+
 .tec-container div {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 15px;
   width: 100%;
   border-radius: 4px;
   font-size: 1.2rem;
@@ -446,6 +460,9 @@ transform: scale(1.2);
   color: #000000;
   background-color: #6fc7d3;
   border-right: #3fc591 300px solid;
+}
+.tec-container:hover {
+  transform: scale(0.99);
 }
 
 .section-projects {
@@ -471,7 +488,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  font-size: 1.4rem;
+  font-size: 1rem;
   width: 100%;
 
   color: var(--main-light-color);
@@ -479,12 +496,10 @@ footer {
 
 .icon-bottom {
   color: var(--main-light-color);
-
-  font-size: 1.6rem;
 }
 .image-linkedin {
   margin-top: 5px;
-  width: 35px;
+  width: 25px;
   margin-bottom: -10px;
 }
 .image-linkedin-a {
@@ -508,8 +523,6 @@ footer {
     width: 450px;
   }
 
-  
-
   .container-photo-skills {
     display: block;
   }
@@ -531,10 +544,10 @@ footer {
     width: 50px;
     height: 50px;
   }
- 
+
   .image-my-photo {
     border: solid var(--main-dark-background) 1px;
-    
+
     width: 250px;
   }
   .container-my-photo {
@@ -600,7 +613,6 @@ footer {
 
   /*  end of hovering name effect  */
 
-
   .tec-container div {
     border-right: var(--normal-background-color) 100px solid;
     background-color: var(--main-dark-background);
@@ -628,10 +640,10 @@ footer {
     width: 50px;
     height: 50px;
   }
-  
+
   .image-my-photo {
     border: solid var(--main-dark-background) 1px;
-      width: 250px;
+    width: 250px;
   }
   .container-my-photo {
     width: 100%;
@@ -696,9 +708,6 @@ footer {
 
   /*  end of hovering name effect  */
 
-
-
-
   /* about */
 
   .container-photo-skills {
@@ -722,10 +731,10 @@ footer {
     width: 50px;
     height: 50px;
   }
- 
+
   .image-my-photo {
     border: solid var(--main-dark-background) 1px;
-   
+
     width: 250px;
   }
   .container-my-photo {
@@ -776,23 +785,20 @@ footer {
     width: 55%;
   }
 
+  /*  hovering name effect  */
 
-    /*  hovering name effect  */
+  .div-reveal .reveal_title,
+  .div-reveal .reveal_title-overlay {
+    font-size: 2.2rem;
+  }
 
-    .div-reveal .reveal_title,
-    .div-reveal .reveal_title-overlay {
-      font-size: 2.2rem;
-    }
-  
-    .div-reveal .reveal_title-overlay {
-      font-size: 1.5rem;
-      width: 75%;;
-      transform: skew(-36deg) translateX(-150%);
-    }
-  
-    /*  end of hovering name effect  */
+  .div-reveal .reveal_title-overlay {
+    font-size: 1.5rem;
+    width: 75%;
+    transform: skew(-36deg) translateX(-150%);
+  }
 
-    
+  /*  end of hovering name effect  */
 
   .container-photo-skills {
     display: block;
@@ -818,7 +824,7 @@ footer {
 
   .image-my-photo {
     border: solid var(--main-dark-background) 1px;
-   
+
     width: 250px;
   }
   .container-my-photo {
@@ -869,43 +875,38 @@ footer {
     width: 55%;
   }
 
-    /*  hovering name effect  */
+  /*  hovering name effect  */
 
-    .div-reveal .reveal_title,
-    .div-reveal .reveal_title-overlay {
-     display: none;
-    }
-  
-    .div-reveal .reveal_title-overlay {
-      display: none;
-    }
-  
-    /*  end of hovering name effect  */
+  .div-reveal .reveal_title,
+  .div-reveal .reveal_title-overlay {
+    display: none;
+  }
 
-    .text-small-devices {
-      display: block;
-    }
-    
-    .text-small-devices h1 {
-      color: #fff;
-      position: absolute;
-     text-shadow: 0.2rem 0.2rem 0.2rem #000;
-      
-    }
-    .text-small-devices-name{
-     
-      top: 50%;
-      left: 10%;     
-      font-size: 2rem;      
+  .div-reveal .reveal_title-overlay {
+    display: none;
+  }
 
-    }
-    .text-small-devices-surname{
-     
-      top: 60%;
-      left: 10%;     
-      font-size: 1.4rem;      
+  /*  end of hovering name effect  */
 
-    }
+  .text-small-devices {
+    display: block;
+  }
+
+  .text-small-devices h1 {
+    color: #fff;
+    position: absolute;
+    text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  }
+  .text-small-devices-name {
+    top: 50%;
+    left: 10%;
+    font-size: 2rem;
+  }
+  .text-small-devices-surname {
+    top: 60%;
+    left: 10%;
+    font-size: 1.4rem;
+  }
 
   .link-container a {
     font-size: 1.4rem;
@@ -983,5 +984,14 @@ footer {
   }
   .skills-container p {
     text-align: center;
+  }
+
+  footer {
+    font-size: 1.52rem;
+  }
+
+  .image-linkedin {
+    width: 32px;
+    margin-bottom: -10px;
   }
 }
