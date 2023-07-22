@@ -388,16 +388,16 @@ main {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Horizontally center the items */
-  justify-content: center; /* Vertically center the items */
-  /* Add any additional styles you want for the container */
+  align-items: center; 
+  justify-content: center; 
+  
 }
 .div-image-my-photo {
   width: 250px;
   height: 350px;
   border-radius: 50%;
   margin-bottom: 65px;
-  display: inline-block; /* or block if you want it to take up the full width */
+  display: inline-block;
   position: relative;
   overflow: hidden;
 }
@@ -422,59 +422,53 @@ main {
   font-size: 1rem;
   text-align: center;
 }
-.container-tecnologies {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
-.container-tecnologies h4 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 14px;
-}
+
+/* tecnologies I am familiar with */
 
 .tec-container {
+  gap: 14px;
+}
+.div-tec-icons {
   display: flex;
-  flex-direction: column;
-
-  gap: 15px;
+  justify-content: left;
+  flex-direction: row;
+  gap: 23%;
+  padding-left:25px;
+  width: 100%;
+  align-items: center;
+  margin: 15px 0 15px 0;
+  border-radius: 5px;
+  background-color: rgb(214,234,228);
+  ;
 }
 .tec-icons {
-  position: absolute;
-  right: 15%;
-  width: 5%;
-  color: var(--main-logo-color);
+  width: 45px;
+  height: 45px;
+  height: 45px;
+  ;
+ 
 }
-.tec-icons:hover {
-  transform: scale(1.3);
-}
-
-.tec-icons-firebase {
-  height: 25px;
-  margin-right: 35px;
+.div-tec-icons p {
+  font-size: 1.42rem;
+ 
 }
 
-.tec-container div {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  padding-left: 15px;
-  width: 100%;
-  border-radius: 4px;
-  font-size: 1.2rem;
-  height: 50px;
-  border-bottom: 1px #32646b solid;
-  color: #000000;
-  background-color: #6fc7d3;
-  border-right: #3fc591 300px solid;
-}
-.tec-container:hover {
-  transform: scale(0.95);
-}
+
+
+
+
+
+/*  end tecnologies I am familiar with */
+
+/*  end about */
+
+
+
+
+
 
 .section-contact {
   padding: 55px 8px 0 8px;
-
   height: 100vh;
   box-shadow: var(--main-box-shadow);
 }
@@ -602,11 +596,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 300px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -689,20 +679,12 @@ footer {
 
   /*  end of hovering name effect  */
 
-  .tec-container div {
-    border-right: var(--normal-background-color) 100px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
 
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 300px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+  
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -789,11 +771,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 300px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -879,11 +857,8 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 200px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
+  
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -940,6 +915,13 @@ footer {
   .para-about-me {
     font-size: 1.3rem;
   }
+
+  /* projects  */
+
+  .image-div-projects {
+    width: 89%;
+  }
+
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -1000,11 +982,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 100px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+  
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -1088,11 +1066,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 300px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -1175,20 +1149,12 @@ footer {
 
   /*  end of hovering name effect  */
 
-  .tec-container div {
-    border-right: var(--normal-background-color) 100px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
 
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 300px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -1275,11 +1241,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 300px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+ 
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -1365,11 +1327,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 200px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -1486,11 +1444,8 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  .tec-container div {
-    border-right: var(--normal-background-color) 100px solid;
-    background-color: var(--main-dark-background);
-    border-bottom: var(--main-dark-background);
-  }
+  
+  
   .section-about {
     display: flex;
     justify-content: space-between;
