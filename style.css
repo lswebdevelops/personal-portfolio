@@ -8,6 +8,7 @@
   --second-text-color: rgb(214, 234, 228);
   --main-light-color: #333;
   --main-logo-color: rgb(42, 119, 170);
+  --main-border-color: rgb(121, 169, 201);
   --main-dark-background: rgb(195, 196, 197);
   --normal-background-color: rgb(214, 234, 228);
   --light-background-color: rgb(249, 250, 251);
@@ -439,6 +440,7 @@ main {
   margin: 15px 0 15px 0;
   border-radius: 5px;
   background-color: rgb(214,234,228);
+  height: 45px;
   ;
 }
 .tec-icons {
@@ -447,6 +449,12 @@ main {
   height: 45px;
   ;
  
+}
+.jest-icon {
+  border-radius: 15px; 
+  width: 35px;
+  height: 35px;
+  ;
 }
 .div-tec-icons p {
   font-size: 1.42rem;
@@ -544,16 +552,20 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: var(--normal-background-color);
-  ;
-  
   color: #333;
   margin-bottom: 24px;
   font-size: 2rem;
   width: auto;
   padding:  5px 25px 5px 25px;
-  ;
-
-  border-radius: 5px;
+  border-radius: 5px;   
+    max-width: 98%;
+    min-width: 98%;
+    
+    
+  }
+  .section-projects h2:hover {
+    transform: scale(1.15);
+    border: solid 1px var(--main-border-color);
 }
 .image-div-projects img {
   width: 100%;
@@ -579,9 +591,8 @@ footer {
 /* end projects */
 
 
-       
+           
 
-         
 
 /* END SINGLE CATEGORY PAGE */
 /********** Large devices only **********/
@@ -921,470 +932,20 @@ footer {
   .image-div-projects {
     width: 89%;
   }
-
-}
-
-/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
-@media (max-width: 479px) {
-  .section-one-logo {
-    position: absolute;
-    top: 200px;
-    right: 15%;
-    width: 55%;
+  .container-projects-react {
+    max-width: 95%;;
+  }
+  .section-projects h2 {
+  font-size: 1.4rem;
+  max-width: 85%;
+  min-width: 88%;
+  ;
   }
 
-  /*  hovering name effect  */
-
-  .div-reveal .reveal_title,
-  .div-reveal .reveal_title-overlay {
-    display: none;
-  }
-
-  .div-reveal .reveal_title-overlay {
-    display: none;
-  }
-
-  /*  end of hovering name effect  */
-
-  .text-small-devices {
-    display: block;
-  }
-
-  .text-small-devices h1 {
-    color: #fff;
-    position: absolute;
-    text-shadow: 0.2rem 0.2rem 0.2rem #000;
-  }
-  .text-small-devices-name {
-    top: 50%;
-    left: 10%;
-    font-size: 2rem;
-  }
-  .text-small-devices-surname {
-    top: 60%;
-    left: 10%;
-    font-size: 1.4rem;
-  }
-
-  .link-container a {
-    font-size: 1.4rem;
-  }
-  .link-icons-a {
-    display: block;
-    font-size: 1.6rem;
-  }
-  .link-text {
-    display: none;
-  }
-
-  /* about */
-
-  .container-photo-skills {
-    display: block;
-  }
-  
-  .section-about {
-    display: flex;
-    justify-content: space-between;
-  }
-  .image-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.3rem;
-    color: var(--main-logo-color);
-    width: 50px;
-    height: 50px;
-  }
-  .div-image-my-photo {
-    width: 200px;
-    height: 300px;
-    border-radius: 50%;
-    margin-bottom: 5px;
-  }
-  .image-my-photo {
-    border: solid var(--main-dark-background) 1px;
-    border-radius: 50%;
-    width: 200px;
-  }
-  .container-my-photo {
-    width: 100%;
-  }
-  .container-tecnologies {
-    width: 100%;
-  }
-  .section-about {
-    height: auto;
-  }
-
-  .container-tecnologies h4 {
-    font-size: 1.4rem;
-  }
-  .container-my-skills {
-    display: flex;
-    gap: 12px;
-  }
-  .container-my-skills h4 {
-    font-size: 1.4rem;
-    height: 30px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 48%;
-  }
-  .skills-container p {
-    text-align: center;
-  }
-
-  footer {
-    font-size: 1.52rem;
-  }
-
-  .image-linkedin {
-    width: 32px;
-    margin-bottom: -10px;
-  }
 }
 
 
 
-
-/* END SINGLE CATEGORY PAGE */
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .section-one-logo {
-    position: absolute;
-    top: 300px;
-    right: 20%;
-    width: 450px;
-  }
-
-  .container-photo-skills {
-    display: block;
-  }
- 
-  .section-about {
-    display: flex;
-    justify-content: space-between;
-  }
-  .image-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9rem;
-    color: var(--main-logo-color);
-    width: 50px;
-    height: 50px;
-  }
-
-  .image-my-photo {
-    border: solid var(--main-dark-background) 1px;
-
-    width: 250px;
-  }
-  .container-my-photo {
-    width: 100%;
-  }
-  .container-tecnologies {
-    width: 100%;
-  }
-  .section-about {
-    height: auto;
-  }
-
-  .container-tecnologies h4 {
-    font-size: 1.3rem;
-  }
-  .container-my-skills {
-    display: flex;
-    gap: 12px;
-  }
-  .container-my-skills h4 {
-    font-size: 1rem;
-    height: 30px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 22%;
-  }
-  .skills-container p {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .para-about-me {
-    font-size: 1.3rem;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .section-one-logo {
-    position: absolute;
-    top: 300px;
-    right: 15%;
-    width: 450px;
-  }
-
-  /*  hovering name effect  */
-
-  .div-reveal .reveal_title,
-  .div-reveal .reveal_title-overlay {
-    font-size: 5rem;
-  }
-
-  .div-reveal .reveal_title-overlay {
-    font-size: 4rem;
-
-    transform: skew(-36deg) translateX(-150%);
-  }
-
-  /*  end of hovering name effect  */
-
- 
-
-  .container-photo-skills {
-    display: block;
-  }
- 
-  .section-about {
-    display: flex;
-    justify-content: space-between;
-  }
-  .image-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9rem;
-    color: var(--main-logo-color);
-    width: 50px;
-    height: 50px;
-  }
-
-  .image-my-photo {
-    border: solid var(--main-dark-background) 1px;
-    width: 250px;
-  }
-  .container-my-photo {
-    width: 100%;
-  }
-  .container-tecnologies {
-    width: 100%;
-  }
-  .section-about {
-    height: auto;
-  }
-
-  .container-tecnologies h4 {
-    font-size: 1.3rem;
-  }
-  .container-my-skills {
-    display: flex;
-    gap: 12px;
-  }
-  .container-my-skills h4 {
-    font-size: 1rem;
-    height: 30px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 22%;
-  }
-  .skills-container p {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .para-about-me {
-    font-size: 1.3rem;
-  }
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
-  .section-one-logo {
-    position: absolute;
-    top: 300px;
-    right: 15%;
-    width: 55%;
-  }
-
-  /*  hovering name effect  */
-
-  .div-reveal .reveal_title,
-  .div-reveal .reveal_title-overlay {
-    font-size: 4rem;
-  }
-
-  .div-reveal .reveal_title-overlay {
-    font-size: 3rem;
-
-    transform: skew(-36deg) translateX(-150%);
-  }
-
-  /*  end of hovering name effect  */
-
-  /* about */
-
-  .container-photo-skills {
-    display: block;
-  }
- 
-  .section-about {
-    display: flex;
-    justify-content: space-between;
-  }
-  .image-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9rem;
-    color: var(--main-logo-color);
-    width: 50px;
-    height: 50px;
-  }
-
-  .image-my-photo {
-    border: solid var(--main-dark-background) 1px;
-
-    width: 250px;
-  }
-  .container-my-photo {
-    width: 100%;
-  }
-  .container-tecnologies {
-    width: 100%;
-  }
-  .section-about {
-    height: auto;
-  }
-
-  .container-tecnologies h4 {
-    font-size: 1.3rem;
-  }
-  .container-my-skills {
-    display: flex;
-    gap: 12px;
-  }
-  .container-my-skills h4 {
-    font-size: 1rem;
-    height: 30px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 48%;
-  }
-  .skills-container p {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .para-about-me {
-    font-size: 1.3rem;
-  }
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  .section-one-logo {
-    position: absolute;
-    top: 300px;
-    right: 15%;
-    width: 55%;
-  }
-
-  /*  hovering name effect  */
-
-  .div-reveal .reveal_title,
-  .div-reveal .reveal_title-overlay {
-    font-size: 2.2rem;
-  }
-
-  .div-reveal .reveal_title-overlay {
-    font-size: 1.5rem;
-    width: 75%;
-    transform: skew(-36deg) translateX(-150%);
-  }
-
-  /*  end of hovering name effect  */
-
-  .container-photo-skills {
-    display: block;
-  }
-
-  .section-about {
-    display: flex;
-    justify-content: space-between;
-  }
-  .image-about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.9rem;
-    color: var(--main-logo-color);
-    width: 50px;
-    height: 50px;
-  }
-
-  .image-my-photo {
-    border: solid var(--main-dark-background) 1px;
-
-    width: 250px;
-  }
-  .container-my-photo {
-    width: 100%;
-  }
-  .container-tecnologies {
-    width: 100%;
-  }
-  .section-about {
-    height: auto;
-  }
-
-  .container-tecnologies h4 {
-    font-size: 1.3rem;
-  }
-  .container-my-skills {
-    display: flex;
-    gap: 12px;
-  }
-  .container-my-skills h4 {
-    font-size: 1rem;
-    height: 30px;
-  }
-
-  .skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 48%;
-  }
-  .skills-container p {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  .para-about-me {
-    font-size: 1.3rem;
-  }
-}
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -1511,4 +1072,15 @@ footer {
     width: 32px;
     margin-bottom: -10px;
   }
+
+  .section-projects h2 {
+    font-size: 1.2rem;
+    max-width: 85%;
+    min-width: 88%;
+    ;
+    }
+
 }
+  
+
+   
