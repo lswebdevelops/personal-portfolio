@@ -659,7 +659,7 @@ footer {
 }
 .label-message {
   border-radius: var(--main-border-radius);
-  height: 3rem;
+ 
   font-size: 1.2rem;
   color: #444;
   
@@ -680,7 +680,7 @@ input:invalid {
 }
 
 input:invalid:required {
-  background-image: linear-gradient(to right, pink, var(--main-border-color));
+  background-image: linear-gradient(to right, var(--normal-background-color), var(--main-border-color));
 }
 
 input:valid {
@@ -696,7 +696,7 @@ textarea:invalid {
 }
 
 textarea:invalid:required {
-  background-image: linear-gradient(to right, pink, var(--main-border-color));
+  background-image: linear-gradient(to right, var(--normal-background-color), var(--main-border-color));
 
 }
 
