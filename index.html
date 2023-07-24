@@ -114,60 +114,60 @@
         </div>
         <div class="container-tecnologies">
           <h4>Some tecnologies I am familiar with</h4>
-          
 
-  <div class="tec-container">
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/javascript.png" />
-      <p class="text-tecn">JavaScript</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/react.svg" />
 
-      <p class="text-tecn">ReactJS</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/html.png" />
-      <p class="text-tecn">HTML</p>
-    </div >
-    <div  class="div-tec-icons">
-      <img class="tec-icons" src="./images/css.png" />
-      <p class="text-tecn">CSS</p>
-    </div>
-    <div  class="div-tec-icons">
-      <img class="tec-icons jest-icon " src="./images/projects/jest.png" />
-      <p class="text-tecn ">Jest</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/icons8-redux.svg" />
-      <p class="text-tecn">Redux</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/mongodb.png" />
-      <p class="text-tecn">MongoDB</p>
-    </div>
-    <div class="div-tec-icons">
+          <div class="tec-container">
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/javascript.png" />
+              <p class="text-tecn">JavaScript</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/react.svg" />
 
-      <img class="tec-icons" src="./images/mongoose.png" />
-      <p class="text-tecn">Mongoose</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/node.png" />
-            <p class="text-tecn">NodeJS</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/express-js.svg" />
-      <p class="text-tecn">Express</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/firebase.png" />
-      <p class="text-tecn">Firebase</p>
-    </div>
-    <div class="div-tec-icons">
-      <img class="tec-icons" src="./images/linux.png" />
-      <p class="text-tecn">Linux</p>
-    </div>
-  </div>
+              <p class="text-tecn">ReactJS</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/html.png" />
+              <p class="text-tecn">HTML</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/css.png" />
+              <p class="text-tecn">CSS</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons jest-icon " src="./images/projects/jest.png" />
+              <p class="text-tecn ">Jest</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/icons8-redux.svg" />
+              <p class="text-tecn">Redux</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/mongodb.png" />
+              <p class="text-tecn">MongoDB</p>
+            </div>
+            <div class="div-tec-icons">
+
+              <img class="tec-icons" src="./images/mongoose.png" />
+              <p class="text-tecn">Mongoose</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/node.png" />
+              <p class="text-tecn">NodeJS</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/express-js.svg" />
+              <p class="text-tecn">Express</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/firebase.png" />
+              <p class="text-tecn">Firebase</p>
+            </div>
+            <div class="div-tec-icons">
+              <img class="tec-icons" src="./images/linux.png" />
+              <p class="text-tecn">Linux</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -260,7 +260,8 @@
           <p>Description of the app </p>
         </div>
       </div>
-      <h2 class="project-h2-names">React apps tested using Jest &nbsp;  <img class="tec-icons jest-icon " src="./images/projects/jest.png" /></h2>
+      <h2 class="project-h2-names">React apps tested using Jest &nbsp; <img class="tec-icons jest-icon "
+          src="./images/projects/jest.png" /></h2>
 
       <div class="container-projects-react">
         <div class="image-div-projects">
@@ -287,7 +288,31 @@
 
 
     <section id="contact" class="section-contact">
-      <h3>Contact</h3>
+      <div class="div-para-contact">
+        <p class="thank-phrase">Thank you for taking the time to contact me.</p>
+        <p class="thank-phrase2">How can I help you? </p>
+      </div>
+
+
+      <form class="contact-inputing-container">
+        <div class="name-email-div">
+          <div class="label-name-container">
+            <label class="label-name" for="name">Name</label>
+            <input class="input-name" required  id="name" type="text">
+          </div>
+          <div class="label-email-container">
+            <label class="label-email" for="email">Email</label>
+            <input class="input-email" id="email" required type="text">
+          </div>
+
+
+        </div>
+        <div class="message-div">
+          <label class="label-message" for="message">Message</label>
+          <textarea rows="7" maxlength="450"  required class="input-message" id="message" type="text"></textarea>
+        </div>
+        <button class="button-submit">Submit</button>
+      </form>
     </section>
   </main>
 

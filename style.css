@@ -9,6 +9,7 @@
   --main-light-color: #333;
   --main-logo-color: rgb(42, 119, 170);
   --main-border-color: rgb(121, 169, 201);
+  --main-border-radius: 5px;
   --main-dark-background: rgb(195, 196, 197);
   --normal-background-color: rgb(214, 234, 228);
   --light-background-color: rgb(249, 250, 251);
@@ -16,6 +17,7 @@
 }
 body {
   margin: 0;
+
   height: 100vh;
   background-color: var(--normal-background-color);
   font-family: "Inter", sans-serif;
@@ -24,7 +26,6 @@ body {
 main {
   max-width: 1200px;
   margin: auto;
-  
 }
 
 /* header */
@@ -48,7 +49,7 @@ main {
 .left-logo-line {
   background-color: var(--main-logo-color);
   position: absolute;
-  border-top-left-radius: 2px;
+  border-top-left-radius: 4px;
   width: 5px;
   height: 100%; /* Set height to 100% to match the container's height */
   left: 0; /* Align the line with the left side of the container */
@@ -180,7 +181,7 @@ main {
   /* background-color: var(--second-dark-background); */
   background-color: var(--main-logo-color);
   position: absolute;
-  border-top-right-radius: 2px;
+  border-top-right-radius: 4px;
   width: calc(
     60%
   ); /* Use calc() to adjust the width based on the container's width */
@@ -237,7 +238,6 @@ main {
 
 .section-one-name {
   margin-top: 25px;
-
 }
 
 /* starting  hover name */
@@ -248,8 +248,8 @@ main {
   overflow: hidden;
 }
 .image-home {
-  width: 100%;  
-  border-radius: 5px;
+  width: 100%;
+  border-radius: var(--main-border-radius);
   opacity: 0.7;
   /* object-fit: cover; */
 }
@@ -341,9 +341,6 @@ main {
   display: none;
 }
 
-
- 
-
 /* about */
 .section-about {
   display: flex;
@@ -372,7 +369,8 @@ main {
 }
 .container-photo-skills > * {
   background-color: var(--light-background-color);
-  border-radius: 5px;
+  border-radius: var(--main-border-radius);
+
   padding: 8px;
 }
 
@@ -389,9 +387,8 @@ main {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  
+  align-items: center;
+  justify-content: center;
 }
 .div-image-my-photo {
   width: 250px;
@@ -434,52 +431,31 @@ main {
   justify-content: left;
   flex-direction: row;
   gap: 23%;
-  padding-left:25px;
+  padding-left: 25px;
   width: 100%;
   align-items: center;
   margin: 15px 0 15px 0;
   border-radius: 5px;
-  background-color: rgb(214,234,228);
+  background-color: rgb(214, 234, 228);
   height: 45px;
-  ;
 }
 .tec-icons {
   width: 45px;
   height: 45px;
   height: 45px;
-  ;
- 
 }
 .jest-icon {
-  border-radius: 15px; 
+  border-radius: 15px;
   width: 35px;
   height: 35px;
-  ;
 }
 .div-tec-icons p {
   font-size: 1.42rem;
- 
 }
-
-
-
-
-
 
 /*  end tecnologies I am familiar with */
 
 /*  end about */
-
-
-
-
-
-
-.section-contact {
-  padding: 55px 8px 0 8px;
-  height: 100vh;
-  box-shadow: var(--main-box-shadow);
-}
 
 /* footer */
 
@@ -543,9 +519,9 @@ footer {
   /* border: firebrick 1px solid; */
   background-color: var(--normal-background-color);
   padding: 15px;
-  border-radius: 5px;
+  border-radius: var(--main-border-radius);
+
   margin-bottom: 15px;
-  
 }
 .section-projects h2 {
   display: flex;
@@ -556,22 +532,21 @@ footer {
   margin-bottom: 24px;
   font-size: 2rem;
   width: auto;
-  padding:  5px 25px 5px 25px;
-  border-radius: 5px;   
-    max-width: 98%;
-    min-width: 98%;
-    
-    
-  }
-  .section-projects h2:hover {
-    transform: scale(1.15);
-    border: solid 1px var(--main-border-color);
+  padding: 5px 25px 5px 25px;
+  border-radius: var(--main-border-radius);
+
+  max-width: 98%;
+  min-width: 98%;
+}
+.section-projects h2:hover {
+  transform: scale(1.15);
+  border: solid 1px var(--main-border-color);
 }
 .image-div-projects img {
   width: 100%;
   height: 95%;
   border: none;
-  border-radius: 5px;
+  border-radius: var(--main-border-radius);
 }
 .image-div-projects img:hover {
   transform: scale(0.9);
@@ -590,9 +565,152 @@ footer {
 
 /* end projects */
 
+/* begin contact */
 
-           
+.section-contact {
+  padding: 55px 8px 0 8px;
+  height: 100vh;
+  margin-top: 64px;
+  background-color: white;
+  border-radius: var(--main-border-radius);
 
+  box-shadow: var(--main-box-shadow);
+}
+.div-para-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+}
+.thank-phrase2 {
+  margin-bottom: 20px;
+}
+.contact-inputing-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name-email-div {
+  display: flex;
+  justify-content: center;
+  max-width: 550px;
+  width: 100%;
+
+  font-size: 1rem;
+}
+.message-div {
+  font-size: 1rem;
+  max-width: 550px;
+  width: 100%;
+}
+
+.label-name-container {
+  width: 50%;
+  margin-right: 14px;
+
+  display: flex;
+  flex-direction: column;
+}
+.label-email-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.name-email-div {
+  /* height: 150px; */
+  margin-bottom: 20px;
+}
+.message-div {
+  height: 250px;
+}
+
+.label-name {
+  color: #444;
+  font-size: 1.2rem;
+}
+.input-name {
+  border: var(--main-border-color) solid 1px;
+  border-radius: var(--main-border-radius);
+  text-align: left;
+  padding: 4px;
+  height: 3rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.label-email {
+  color: #444;
+  font-size: 1.2rem;
+}
+.input-email {
+  border: var(--main-border-color) solid 1px;
+  border-radius: var(--main-border-radius);
+  height: 3rem;
+  font-size: 1rem;
+  text-align: left;
+  padding: 4px;
+  color: #444;
+}
+.message-div {
+  display: flex;
+  flex-direction: column;
+}
+.label-message {
+  border-radius: var(--main-border-radius);
+  height: 3rem;
+  font-size: 1.2rem;
+  color: #444;
+  
+  ;
+}
+.input-message {
+  border-radius: var(--main-border-radius);
+  height: 10rem;
+  font-size: 1.2rem;
+  color: #444;
+  border: var(--main-border-color) solid 1px;
+  text-align: left;
+  padding: 4px;
+  
+}
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, pink, var(--main-border-color));
+}
+
+input:valid {
+  border: 2px solid var(--main-logo-color);
+}
+textarea:valid {
+  border: 2px solid var(--main-logo-color);
+
+}
+
+textarea:invalid {
+  border: 2px dashed red;
+}
+
+textarea:invalid:required {
+  background-image: linear-gradient(to right, pink, var(--main-border-color));
+
+}
+
+.button-submit {
+  border: var(--main-border-color) solid 1px;
+  color: var(--main-logo-color);
+  width: 100%;
+  max-width: 550px;
+  border-radius: var(--main-border-radius);
+  height: 2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+/* end contact */
 
 /* END SINGLE CATEGORY PAGE */
 /********** Large devices only **********/
@@ -607,7 +725,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
- 
+
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -690,12 +808,10 @@ footer {
 
   /*  end of hovering name effect  */
 
- 
-
   .container-photo-skills {
     display: block;
   }
-  
+
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -868,8 +984,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
- 
-  
+
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -933,19 +1048,28 @@ footer {
     width: 89%;
   }
   .container-projects-react {
-    max-width: 95%;;
+    max-width: 95%;
   }
   .section-projects h2 {
-  font-size: 1.4rem;
-  max-width: 85%;
-  min-width: 88%;
-  ;
+    font-size: 1.4rem;
+    max-width: 85%;
+    min-width: 88%;
   }
 
+  /* contact */
+  .name-email-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label-name-container,
+  .label-email-container {
+    margin: 0;
+    width: 100%;
+  }
 }
-
-
-
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
@@ -1005,8 +1129,7 @@ footer {
   .container-photo-skills {
     display: block;
   }
-  
-  
+
   .section-about {
     display: flex;
     justify-content: space-between;
@@ -1077,10 +1200,5 @@ footer {
     font-size: 1.2rem;
     max-width: 85%;
     min-width: 88%;
-    ;
-    }
-
+  }
 }
-  
-
-   
