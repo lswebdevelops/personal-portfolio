@@ -524,6 +524,11 @@ footer {
 
   margin-bottom: 15px;
 }
+.image-div-projects p{
+ font-size: larger;
+ padding: 12px;
+ ;
+}
 .section-projects h2 {
   display: flex;
   justify-content: center;
